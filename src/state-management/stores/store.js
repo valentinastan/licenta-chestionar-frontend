@@ -4,7 +4,7 @@ import questionReducer from '../reducers/questionReducer'
 const initialState = { questionnaire : {
   1: {
     id: 1,
-    text: "Acesta este textul meu",
+    text: "Intrebare cu multiple choices",
     variante: {
       1: {
         val: 'Gigel',
@@ -17,13 +17,13 @@ const initialState = { questionnaire : {
       3: {
         val: 'Marcel',
         checked: false,
-      }
+      },
     },
-    choiceNumber: 2,
+    type: 'multipleChoices',
   },
   2: {
     id: 2,
-    text: "fjhfjkfjksfk",
+    text: 'Intrebare cu 1 raspuns',
     variante: {
       1: {
         val: "Var1",
@@ -33,8 +33,55 @@ const initialState = { questionnaire : {
         val: "Var2",
         checked: false,
       },
-    }
+    },
   },
+  3: {
+    id: 3,
+    text: 'Intrebare cu 3!?',
+    variante: {
+      1: {
+        val: "Var1",
+        checked: false,
+      },
+      2: {
+        val: "Var2",
+        checked: false,
+      },
+      3: {
+        val: 'Var3',
+        checked: false,
+      },
+      4: {
+        val: 'Var4',
+        checked: false,
+      },
+    },
+    type: 'threeChoices',
+  },
+  4: {
+    id: 4,
+    text: 'Intrebarea cu rasp multiple',
+    variante: {
+      1: {
+        val: "Var1",
+        checked: false,
+      },
+      2: {
+        val: "Var2",
+        checked: false,
+      },
+      3: {
+        val: 'Var3',
+        checked: false,
+      },
+      4: {
+        val: 'Var4',
+        checked: false,
+      },
+    },
+    type: 'multipleChoices',
+  },
+  
 }}
 
 const Store = React.createContext();

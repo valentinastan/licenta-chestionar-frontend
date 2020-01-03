@@ -1,5 +1,5 @@
 import React from 'react';
-import {useDispatch} from '../state-management/stores/store'
+import {useDispatch, StateProvider} from '../state-management/stores/store'
 
 const printEvent = (e) => {
   console.log(e.target.checked)
@@ -12,6 +12,7 @@ const MultipleChoiceQuestion = (props) => {
   const dispatch = useDispatch()
   const answersKeys = Object.keys(variante)
 
+  console.log(props)
   return (
     <React.Fragment>
       <h1>{props.text}</h1>
@@ -24,6 +25,7 @@ const MultipleChoiceQuestion = (props) => {
           })}></input><br />
         </React.Fragment>
       ))}
+      <h1>{props.errorMessage}</h1>
     </React.Fragment>
   )
 }
