@@ -2,17 +2,18 @@ import React from 'react';
 import MultipleChoiceQuestion from './multipleChoiceQuestion'
 import TextInputQuestion from './textInputQuestion'
 import { useState, useDispatch } from '../state-management/stores/store'
+import { postQuestionnaireQuery } from '../queries/questionnaire'
 
 
 const Chestionar = () => {
 
-  const questions = useState().questionnaire
+  const {questions, validated} = useState().questionnaire
   const questionKeys = Object.keys(questions)
   const dispatch = useDispatch()
 
   const validQuestion = (question) => {
   const keys = Object.keys(question.variante || {})
-   
+  
   if(question.type === 'multipleChoices') {
     console.log(question.variante)
     if(keys.filter(key => question.variante[key].checked === true).length <= 0) {
@@ -53,7 +54,10 @@ const Chestionar = () => {
 
   const handleSubmit = () => {
     if(validQuestionnaire()){
-      //send to backend
+      postQuestionnaireQuery(questions)
+      dispatch({
+        type:'validated',
+      })
     }
     //err
   }
@@ -61,13 +65,25 @@ const Chestionar = () => {
   // console.log(questions)
   return (
     <React.Fragment>
-      { questionKeys.map(key => {
-        if(questions[key].type === 'inputAnswer') {
-          return <TextInputQuestion key={`question_${key}`} {...questions[key]}></TextInputQuestion>
-        }
-        return <MultipleChoiceQuestion key={`question_${key}`} {...questions[key]}> </MultipleChoiceQuestion>} ) 
+      {
+        !validated ? 
+          (
+            <React.Fragment>
+              {
+                questionKeys.map(key => {
+                  if(questions[key].type === 'inputAnswer') {
+                    return <TextInputQuestion key={`question_${key}`} {...questions[key]}></TextInputQuestion>
+                  }
+                  return <MultipleChoiceQuestion key={`question_${key}`} {...questions[key]}> </MultipleChoiceQuestion>
+                })
+              } 
+              <button type="button" onClick={ () => handleSubmit()}>Submit</button>
+            </React.Fragment>
+          ): (
+            <h1>Succes!</h1>
+          )
       }
-      <button type="button" onClick={ () => handleSubmit()}>Submit</button>
+
     </React.Fragment>
   )
 }
