@@ -5,7 +5,7 @@ import { useState, useDispatch } from '../state-management/stores/store'
 import { postQuestionnaireQuery } from '../queries/questionnaire'
 
 
-const Chestionar = () => {
+const Questionnaire = () => {
 
   const {questions, validated} = useState().questionnaire
   const questionKeys = Object.keys(questions)
@@ -13,7 +13,7 @@ const Chestionar = () => {
 
   const validQuestion = (question) => {
   const keys = Object.keys(question.variante || {})
-  
+
   if(question.type === 'multipleChoices') {
     console.log(question.variante)
     if(keys.filter(key => question.variante[key].checked === true).length <= 0) {
@@ -48,7 +48,7 @@ const Chestionar = () => {
 
   const validQuestionnaire = () => {
     const validatedAnswers = questionKeys.map(key => validQuestion(questions[key]))
-    
+
     return validatedAnswers.every(el => el === true)
   }
 
@@ -65,26 +65,27 @@ const Chestionar = () => {
   // console.log(questions)
   return (
     <React.Fragment>
-      {
-        !validated ? 
-          (
-            <React.Fragment>
-              {
-                questionKeys.map(key => {
-                  if(questions[key].type === 'inputAnswer') {
-                    return <TextInputQuestion key={`question_${key}`} {...questions[key]}></TextInputQuestion>
-                  }
-                  return <MultipleChoiceQuestion key={`question_${key}`} {...questions[key]}> </MultipleChoiceQuestion>
-                })
-              } 
-              <button type="button" onClick={ () => handleSubmit()}>Submit</button>
-            </React.Fragment>
-          ): (
-            <h1>Succes!</h1>
-          )
-      }
-
+      <div className = 'questionnaire'>
+        {
+          !validated ?
+            (
+              <React.Fragment>
+                {
+                  questionKeys.map(key => {
+                    if(questions[key].type === 'inputAnswer') {
+                      return <TextInputQuestion key={`question_${key}`} {...questions[key]}></TextInputQuestion>
+                    }
+                    return <MultipleChoiceQuestion key={`question_${key}`} {...questions[key]}> </MultipleChoiceQuestion>
+                  })
+                }
+                <button type="button" onClick={ () => handleSubmit()}>Submit</button>
+              </React.Fragment>
+            ): (
+              <h1>Succes!</h1>
+            )
+        }
+      </div>
     </React.Fragment>
   )
 }
-export default Chestionar
+export default Questionnaire

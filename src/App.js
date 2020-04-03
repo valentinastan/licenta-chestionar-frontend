@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Chestionar from './components/chestionar'
+import Questionnaire from './components/questionnaire'
 
 function App() {
   return (
-   <Chestionar></Chestionar>
+   <Questionnaire></Questionnaire>
   );
 }
 
