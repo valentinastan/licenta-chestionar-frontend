@@ -1,0 +1,45 @@
+.questionnaire {
+  margin: 20% 16%;
+}
+
+.questionnaire ul {
+  list-style: none;
+}
+
+button {
+    background-color:	#ff6e29;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    box-shadow: 4px 4px 6px #fbb370;
+  }
+
+button:hover {
+  background-color: #e64900;
+  box-shadow: 4px 4px 6px #fa7d57;
+}
+
+h2 {
+  FONT-WEIGHT: 100;
+  font-family: auto;
+  padding: 2% 7% 0 7%;
+  text-align: center;
+}
+
+h1 {
+  FONT-WEIGHT: 100;
+  font-family: auto;
+  padding: 2% 7% 0 7%;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 45px;
+  margin-bottom: 2em;
+  text-shadow: -4px 3px 3px black, 0 2px 3px black, 2px 0 3px black, 0 -1px black;
+}
+

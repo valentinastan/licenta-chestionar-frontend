@@ -5,8 +5,62 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #E0F2F1;
+  background-color: #006770;
+  height: 100%;
+  width: 100%;
 }
+
+@media screen and (max-width: 3072px) {
+  body {
+    background-image: url("./z-images/3072size.jpg");
+  }
+}
+@media screen and (max-width: 2048px) {
+  body {
+    background-image: url("./z-images/2048size.jpg");
+  }
+}
+@media screen and (max-width: 1600px) {
+  body {
+    background-image: url("./z-images/1600size.jpg");
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    background-image: url("./z-images/1024size.jpg");
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url("./z-images/800size.jpg");
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    background-image: url("./z-images/640size.jpg");
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url("./z-images/500size.jpg");
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    background-image: url("./z-images/400size.jpg");
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    background-image: url("./z-images/320size.jpg");
+  }
+}
+@media screen and (max-width: 240px) {
+  body {
+    background-image: url("./z-images/240size.jpg");
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

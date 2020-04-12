@@ -4,11 +4,11 @@ const allQuestions = {
     questions: {
     1: {
       id: 1,
-      text: "În general, cu ce frecvenţă consumaţi  legume( proaspete )? - Răspuns unic",
+      text: "În general, cu ce frecvenţă consumaţi legume proaspete?",
       variante: {
         1: {
           val: 'Zilnic',
-          checked: false, 
+          checked: false,
         },
         2: {
           val: 'De 2-3ori pe saptamana',
@@ -26,7 +26,7 @@ const allQuestions = {
     },
     2: {
       id: 2,
-      text: 'Cat de des achizitionati legume? -R.unic ',
+      text: 'Cat de des achizitionati legume proaspete?',
       variante: {
         1: {
           val: 'Zilnic',
@@ -44,7 +44,7 @@ const allQuestions = {
     },
     3: {
       id: 3,
-      text: 'Ce procent din cantitatea totală de alimente consumate într-o lună este alocat consumului de legume (proaspete)? -Răspuns unic, ',
+      text: 'Ce procent din cantitatea totală de alimente consumate într-o lună este alocat consumului de legume proaspete?',
       variante: {
         1: {
           val: 'Intre 1% - 25%',
@@ -66,7 +66,7 @@ const allQuestions = {
     },
     4: {
       id: 4,
-      text: 'Ce produse din categoria legume (proaspete) aţi consumat în ultima lună? Răspuns multiplu',
+      text: 'Ce produse din categoria legume proaspete aţi consumat în ultima lună?',
       variante: {
         1: {
           val: 'Cartofi',
@@ -109,7 +109,7 @@ const allQuestions = {
           checked: false,
         },
         11: {
-          val: 'Ridichi',
+          val: 'Ridichii',
           checked: false,
         },
         12: {
@@ -185,14 +185,14 @@ const allQuestions = {
     },
     5: {
       id: 5,
-      text: 'De unde obişnuiţi să vă procuraţi legume (proaspete)?-R. multiplu',
+      text: 'De unde obişnuiţi să vă procuraţi legumele proaspete?',
       variante: {
         1: {
-          val: 'Le cumpar din hipermarket-supermarket',
+          val: 'Le cumpar din hipermarket sau supermarket',
           checked: false,
         },
         2: {
-          val: 'Magazin specializat legume',
+          val: 'Magazin specializat pentru legume',
           checked: false,
         },
         3: {
@@ -208,7 +208,7 @@ const allQuestions = {
           checked: false,
         },
         6: {
-          val: 'Magazin specializat legume/fructe online',
+          val: 'Magazin specializat pentru legume/fructe online',
           checked: false,
         },
       },
@@ -216,7 +216,7 @@ const allQuestions = {
     },
     6: {
       id: 6,
-      text: 'Vă rugăm să menţionaţi, în ordinea importanţei, principalele trei criterii de care ţineţi cont în alegerea legumelor(proaspete)?R. multiplu',
+      text: 'Vă rugăm să menţionaţi, în ordinea importanţei, principalele trei criterii de care ţineţi cont în alegerea legumelor proaspete?',
       variante: {
         1: {
           val: 'Prospeţimea',
@@ -227,11 +227,11 @@ const allQuestions = {
           checked: false,
         },
         3: {
-          val: 'Originea produselor(locala sau import)',
+          val: 'Originea produselor(locala sau import)   ',
           checked: false,
         },
         4: {
-          val: 'Pret',
+          val: 'Pretul',
           checked: false,
         },
         5: {
@@ -243,22 +243,22 @@ const allQuestions = {
     },
     7: {
       id: 7,
-      text: 'Referindu-vă la categoriile de legume (proaspete) cultivate şi în România, care dintre următoarele'+
-      'afirmaţii referitoare la achiziţionarea lor vi se potriveşte cel mai bine? - Răspuns unic—',
+      text: 'Referindu-vă la categoriile de legume proaspete cultivate şi în România, care dintre următoarele'+
+      'afirmaţii referitoare la achiziţionarea lor vi se potriveşte cel mai bine?',
       variante: {
         1: {
-          val: 'prefer sa cumpar legume autohtone',
+          val: 'Prefer sa cumpar legume autohtone',
           checked: false,
         },
         2: {
-          val: 'prefer sa cumpar legume din import',
+          val: 'Prefer sa cumpar legume din import',
           checked: false,
         },
       },
     },
     8: {
       id: 8,
-      text: 'Preferati sa achizitionati legume in extrasezon?',
+      text: 'Preferati sa achizitionati legume proaspete in extrasezon?',
       variante: {
         1: {
           val: 'Da',
@@ -272,12 +272,12 @@ const allQuestions = {
     },
     9: {
       id: 9,
-      text: 'Ce legume v-ati dori sa puteti achizitiona pe tot parcursul anului, chiar si in sezonul rece?-R.liber',
+      text: 'Ce legume v-ati dori sa puteti achizitiona pe tot parcursul anului, chiar si in sezonul rece?',
       type: 'inputAnswer',
     },
     10: {
       id: 10,
-      text: 'Cu cat ati fi dispus sa platiti mai mult pentru un kilogram de legume ecologice comparativ cu un kilogram de legume conventionale?-R.unic',
+      text: 'Cu cat ati fi dispus sa platiti mai mult pentru un kilogram de legume ecologice comparativ cu un kilogram de legume conventionale?',
       variante: {
         1: {
           val: '0%',
@@ -303,7 +303,59 @@ const allQuestions = {
     },
     11: {
       id: 11,
-      text: 'Ne puteţi spune care este vârsta dumneavoastră?-R.unic',
+      text: 'Cat de multumit sunteti cu privire la legumele proaspete pe care le achizitionati in momentul actual?',
+      variante: {
+        1: {
+          val: 'Foarte nemultumit',
+          checked: false,
+        },
+        2: {
+          val: 'Nemultumit',
+          checked: false,
+        },
+        3: {
+          val: 'Indiferent',
+          checked: false,
+        },
+        4: {
+          val: 'Multumit',
+          checked: false,
+        },
+        5: {
+          val: 'Foarte multumit',
+          checked: false,
+        },
+      },
+    },
+    12: {
+      id: 12,
+      text: 'Cat de dificil va este sa gasiti legume proaspete conform asteptarilor dumneavoastra?',
+      variante: {
+        1: {
+          val: 'Foarte dificil, nu gasesc',
+          checked: false,
+        },
+        2: {
+          val: 'Dificil, gasesc greu',
+          checked: false,
+        },
+        3: {
+          val: 'Indiferent, nu pot estima',
+          checked: false,
+        },
+        4: {
+          val: 'Relativ usor, nu caut foarte mult',
+          checked: false,
+        },
+        5: {
+          val: 'Foarte usor, cumpar din prima ceea ce caut',
+          checked: false,
+        },
+      },
+    },
+    13: {
+      id: 13,
+      text: 'Care este vârsta dumneavoastră?',
       variante: {
         1: {
           val: '18-25 ani',
@@ -331,9 +383,9 @@ const allQuestions = {
         },
       },
     },
-    12: {
-      id: 12,
-      text: 'Genul dumneavoastră?-R.unic',
+    14: {
+      id: 14,
+      text: 'Sexul dumneavoastră?',
       variante: {
         1: {
           val: 'Feminin',
@@ -345,9 +397,9 @@ const allQuestions = {
         },
       },
     },
-    13: {
-      id: 13,
-      text: 'Care este numărul de persoane care locuiesc în gospodăria dumneavoastră?-R.unic',
+    15: {
+      id: 15,
+      text: 'Care este numărul de persoane care locuiesc în gospodăria dumneavoastră?',
       variante: {
         1: {
           val: '1 persoana',
@@ -375,9 +427,9 @@ const allQuestions = {
         },
       },
     },
-    14: {
-      id: 14,
-      text: 'Din care copii sub 18 ani?-R.unic',
+    16: {
+      id: 16,
+      text: 'Din care copii sub 18 ani?',
       variante: {
         1: {
           val: 'Nici un copil',
@@ -397,9 +449,9 @@ const allQuestions = {
         },
       },
     },
-    15: {
-      id: 15,
-      text: 'Starea civilă?-R.unic',
+    17: {
+      id: 17,
+      text: 'Care este starea civilă a dumneavoastra?',
       variante: {
         1: {
           val: 'Casatorit(a)',
@@ -423,9 +475,9 @@ const allQuestions = {
         },
       },
     },
-    16: {
-      id: 16,
-      text: 'Care este ultima şcoală absolvită? -R.unic',
+    18: {
+      id: 18,
+      text: 'Care este ultima şcoală absolvită?',
       variante: {
         1: {
           val: 'Scoală generală',
@@ -449,9 +501,9 @@ const allQuestions = {
         },
       },
     },
-    17: {
-      id: 17,
-      text: 'Ocupaţia dumneavoastră actuală?-R.unic',
+    19: {
+      id: 19,
+      text: 'Ocupaţia dumneavoastră actuală?',
       variante: {
         1: {
           val: 'Angajat in sectorul public',
@@ -483,9 +535,9 @@ const allQuestions = {
         },
       },
     },
-    18: {
-      id: 18,
-      text: 'Care este, cu aproximaţie, venitul lunar net al dumneavoastră?-R.unic',
+    20: {
+      id: 20,
+      text: 'Care este, cu aproximaţie, venitul lunar net al dumneavoastră?',
       variante: {
         1: {
           val: 'Sub 1999 lei',
@@ -513,9 +565,9 @@ const allQuestions = {
         },
       },
     },
-    19: {
-      id: 19,
-      text: 'Cum apreciaţi veniturile dumneavoastră în raport cu necesităţile pe care le aveţi?-R.unic',
+    21: {
+      id: 21,
+      text: 'Cum apreciaţi veniturile dumneavoastră în raport cu necesităţile pe care le aveţi?',
       variante: {
         1: {
           val: 'Nu ne ajung nici pentru strictul necesar',

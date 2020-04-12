@@ -4,24 +4,45 @@
  border-radius: 8px;
  text-shadow: 2px 2px #80CBC4;
  color: #00342b;
+ box-shadow: 0 0 10px #02454b; /*#2787A2;*/
 }
 
 .multipleChoiceQuestion .errorMessage {
-  color:#D32F2F;
+  color: white;
+  text-shadow: 2px 2px 5px red;
+  background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(255,0,0,1));
+  background-color: white;
+  font-family: fantasy;
+  text-align: center;
+}
+
+.multipleChoiceQuestion .errorMessage:default {
+  background-color: none;
+}
+
+.choicesType div {
+  text-align: end;
+  font-family: cursive;
+  color: #008086;
+  margin: -1% 15% 3%;
 }
 
 .allVariants{
-  max-width: 40%;
-  display: flow-root;
-  margin-left: 10px;
+  display: flex;
+  padding: 0 10% 5% 10%;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+  align-content: center;
 }
 
 .variant {
   background-color: #fff;
-  display: block;
+  display: flex;
   margin: 10px 0;
   position: relative;
   text-shadow: 1px 1px #80CBC4;
+  margin: 1em;
+
 }
 
 .variant label {
@@ -34,6 +55,14 @@
   z-index: 2;
   transition: color 200ms ease-in;
   overflow: hidden;
+  border: 2px solid #00b3b0 ;
+  box-shadow: 2px 2px 7px #00b3b0;
+  width: 150px;
+  height: inherit;
+}
+
+.variant label:hover {
+  border: 2px solid #f4c353; /*#FBE8A6;*/
 }
 
 .variant label::before {
@@ -41,12 +70,12 @@
   height: 10px;
   border-radius: 50%;
   content: '';
-  background-color: #5562eb;
+  background-color:#006770; /* #5562eb;*/
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale3d(1, 1, 1);
-  transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: all 150ms cubic-bezier(0.4, 0.0, 0.2, 1);
   opacity: 0;
   z-index: -1;
 }
@@ -67,7 +96,7 @@
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  transition: all 200ms ease-in;
+  transition: all 150ms ease-in;
 }
 
 .variant input:checked ~ label {

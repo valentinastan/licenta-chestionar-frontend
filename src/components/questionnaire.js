@@ -17,7 +17,7 @@ const Questionnaire = () => {
   if(question.type === 'multipleChoices') {
     console.log(question.variante)
     if(keys.filter(key => question.variante[key].checked === true).length <= 0) {
-      dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Bifeaza cel putin o varianta de raspuns'})
+      dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Bifeaza cel putin o varianta de raspuns!'})
       return false
     }
     return true
@@ -25,7 +25,7 @@ const Questionnaire = () => {
 
   if(question.type === 'threeChoices') {
     if(keys.filter(key => question.variante[key].checked === true).length !== 3) {
-      dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Bifeaza cel 3 variante de raspuns'})
+      dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Bifeaza 3 variante de raspuns!'})
       return false
     }
     return true
@@ -33,14 +33,14 @@ const Questionnaire = () => {
 
   if(question.type === 'inputAnswer') {
     if(!question.answer) {
-      dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Raspuns necesar'})
+      dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Raspuns necesar!'})
       return false
     }
     return true
   }
 
   if(keys.filter(key => question.variante[key].checked === true).length !== 1) {
-    dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Bifeaza o varianta de raspuns'})
+    dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Bifeaza o varianta de raspuns!'})
     return false
   }
   return true
@@ -70,18 +70,24 @@ const Questionnaire = () => {
           !validated ?
             (
               <React.Fragment>
+                <h1>Studiu privind satisfactia consumatorilor de legume proaspete si preferintele acestora</h1>
+                <ul>
                 {
-                  questionKeys.map(key => {
+                  questionKeys.map( (key, index) => {
                     if(questions[key].type === 'inputAnswer') {
-                      return <TextInputQuestion key={`question_${key}`} {...questions[key]}></TextInputQuestion>
+                      return <TextInputQuestion key={`question_${key}`} {...questions[key]} nrQuestion={index}></TextInputQuestion>
                     }
-                    return <MultipleChoiceQuestion key={`question_${key}`} {...questions[key]}> </MultipleChoiceQuestion>
+                    return <MultipleChoiceQuestion key={`question_${key}`} {...questions[key]} nrQuestion={index}></MultipleChoiceQuestion>
                   })
                 }
+                </ul>
                 <button type="button" onClick={ () => handleSubmit()}>Submit</button>
               </React.Fragment>
             ): (
-              <h1>Succes!</h1>
+              <React.Fragment>
+                <h1>Chestionarul a fost transmis cu succes!</h1>
+                <h1>Iti multumesc frumos!</h1>
+              </React.Fragment>
             )
         }
       </div>

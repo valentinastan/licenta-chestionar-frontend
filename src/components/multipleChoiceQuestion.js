@@ -13,8 +13,14 @@ const MultipleChoiceQuestion = (props) => {
   //console.log(props)
   return (
     <React.Fragment>
-      <div className = 'multipleChoiceQuestion'>
-        <h2>{props.text}</h2>
+      <li className = 'multipleChoiceQuestion'>
+        <h2>{`${props.nrQuestion + 1}. ${props.text}`}</h2>
+        <div className="choicesType">{
+          props.type === "multipleChoices" ? <div>Puteti alege mai multe variante de raspuns.</div>
+            : props.type === "threeChoices" ? <div>Alegeti 3 variante de raspuns.</div>
+            : <div>Alegeti o singura varianta de raspuns.</div>
+        }
+        </div>
         <div className='allVariants'>
           {answersKeys.map((aKey) => (
             <React.Fragment key={`chestionar_${props.id}_${aKey}`}>
@@ -30,7 +36,7 @@ const MultipleChoiceQuestion = (props) => {
           ))}
         </div>
         <h3 className = 'errorMessage'>{props.errorMessage}</h3>
-      </div>
+      </li>
     </React.Fragment>
   )
 }
