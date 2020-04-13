@@ -10,6 +10,11 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 4096) {
+  body {
+    background-image: url("./z-images/4096size.jpg");
+  }
+}
 @media screen and (max-width: 3072px) {
   body {
     background-image: url("./z-images/3072size.jpg");

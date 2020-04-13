@@ -56,3 +56,22 @@ p {
   font-style: oblique;
 }
 
+@media screen and (max-width: 1600px) {
+  h1 {
+    padding: 2% 7% 0 13%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .questionnaire {
+    margin: 0 11% 0 0;
+  }
+  h1 {
+    font-size: 30px;
+    padding: 2% 0% 0 12%;
+  }
+  button {
+    margin-bottom: 10%;
+    margin-left: 36%;
+  }
+}

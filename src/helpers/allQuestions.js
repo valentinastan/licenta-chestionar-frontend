@@ -244,7 +244,7 @@ const allQuestions = {
     7: {
       id: 7,
       text: 'Referindu-vă la categoriile de legume proaspete cultivate şi în România, care dintre următoarele'+
-      'afirmaţii referitoare la achiziţionarea lor vi se potriveşte cel mai bine?',
+      ' afirmaţii referitoare la achiziţionarea lor vi se potriveşte cel mai bine?',
       variante: {
         1: {
           val: 'Prefer sa cumpar legume autohtone',

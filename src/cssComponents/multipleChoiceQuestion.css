@@ -10,7 +10,7 @@
 .multipleChoiceQuestion .errorMessage {
   color: white;
   text-shadow: 2px 2px 5px red;
-  background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(255,0,0,1));
+  background-image: linear-gradient(to top, rgba(255,0,0,0), #e60000);
   background-color: white;
   font-family: fantasy;
   text-align: center;
@@ -31,11 +31,10 @@
   font-size: 20px;
 }
 
-.allVariants{
+.allVariants {
   display: flex;
   padding: 0 10% 5% 10%;
   flex-wrap: wrap;
-  /*justify-content: center;*/
   align-content: center;
 }
 
@@ -130,3 +129,33 @@
   visibility: hidden;
 }
 
+@media screen and (max-width: 1450px) {
+  .choicesType div {
+    margin: -1% 24% 3%;
+  }
+  .allVariants {
+    padding: 0 10% 5% 21%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .choicesType div {
+    margin: -1% 12% 3%;
+  }
+  .allVariants {
+    padding: 0 4% 5% 9%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .choicesType div {
+    text-align: center;
+  }
+  .allVariants{
+    padding: 0;
+    justify-content: center
+  }
+  .variant label {
+    width: 120px;
+  }
+}
