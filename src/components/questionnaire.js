@@ -72,21 +72,22 @@ const Questionnaire = () => {
               <React.Fragment>
                 <h1>Studiu privind satisfactia consumatorilor de legume proaspete si preferintele acestora</h1>
                 <ul>
-                {
-                  questionKeys.map( (key, index) => {
-                    if(questions[key].type === 'inputAnswer') {
-                      return <TextInputQuestion key={`question_${key}`} {...questions[key]} nrQuestion={index}></TextInputQuestion>
-                    }
-                    return <MultipleChoiceQuestion key={`question_${key}`} {...questions[key]} nrQuestion={index}></MultipleChoiceQuestion>
-                  })
-                }
+                  {
+                    questionKeys.map( (key, index) => {
+                      if(questions[key].type === 'inputAnswer') {
+                        return <TextInputQuestion key={`question_${key}`} {...questions[key]} nrQuestion={index}></TextInputQuestion>
+                      }
+                      return <MultipleChoiceQuestion key={`question_${key}`} {...questions[key]} nrQuestion={index}></MultipleChoiceQuestion>
+                    })
+                  }
+                  <p>Nota: Colectarea informatiilor pe baza prezentului chestionar se face cu respectarea prevederilor art. 12 din Legea nr. 677 2001 pentru protectia persoanelor cu privire la prelucrarea datelor cu caracter personal si libera circulatie a acestor date, cu modificarile si completarile ulterioare.</p>
                 </ul>
                 <button type="button" onClick={ () => handleSubmit()}>Submit</button>
               </React.Fragment>
             ): (
               <React.Fragment>
                 <h1>Chestionarul a fost transmis cu succes!</h1>
-                <h1>Iti multumesc frumos!</h1>
+                <h1>Va multumesc frumos!</h1>
               </React.Fragment>
             )
         }
