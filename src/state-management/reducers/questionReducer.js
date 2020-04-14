@@ -10,9 +10,14 @@ export default function questionReducer(state, action) {
 
       return state
     case 'inputChange':
-      state.questions[action.id].answer = action.value
+      state.questions[action.id].variante = {
+        '1': {
+          val: action.value,
+          checked: true,
+        }
+      }
       state.questions[action.id].errorMessage = ''
-      
+
       return state
     case 'validated':
       state.validated = true

@@ -32,7 +32,7 @@ const Questionnaire = () => {
   }
 
   if(question.type === 'inputAnswer') {
-    if(!question.answer) {
+    if(!question.variante['1'].val) {
       dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Raspuns necesar!'})
       return false
     }
