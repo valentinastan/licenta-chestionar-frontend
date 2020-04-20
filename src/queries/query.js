@@ -4,7 +4,8 @@ console.log('THIS IS THE NODE ENV:', process.env.NODE_ENV === 'development')
 console.log('THIS IS THE NODE ENV:', process.env.NODE_ENV)
 let SERVER = 'http://licenta-chestionar-back-end.herokuapp.com/'
 if(process.env.NODE_ENV === 'development'){
-  SERVER = 'http://localhost:2020'
+  SERVER = 'http://licenta-chestionar-back-end.herokuapp.com/'
+  //SERVER = 'http://localhost:2020'
 }
 
 console.log(SERVER)
