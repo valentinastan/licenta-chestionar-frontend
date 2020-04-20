@@ -2,9 +2,9 @@ import axios from 'axios'
 
 console.log('THIS IS THE NODE ENV:', process.env.NODE_ENV === 'development')
 console.log('THIS IS THE NODE ENV:', process.env.NODE_ENV)
-let SERVER = 'http://licenta-chestionar-back-end.herokuapp.com/'
+let SERVER = 'http://licenta-chestionar-back-end.herokuapp.com'
 if(process.env.NODE_ENV === 'development'){
-  SERVER = 'http://licenta-chestionar-back-end.herokuapp.com/'
+  SERVER = 'http://licenta-chestionar-back-end.herokuapp.com'
   //SERVER = 'http://localhost:2020'
 }
 
