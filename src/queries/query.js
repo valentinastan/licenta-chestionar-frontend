@@ -1,6 +1,13 @@
 import axios from 'axios'
 
-const SERVER = 'http://localhost:2020'
+console.log('THIS IS THE NODE ENV:', process.env.NODE_ENV === 'development')
+console.log('THIS IS THE NODE ENV:', process.env.NODE_ENV)
+let SERVER = 'http://localhost:8080'
+if(process.env.NODE_ENV === 'development'){
+  SERVER = 'http://localhost:2020'
+}
+
+console.log(SERVER)
 
 export async function get(url) {
   let response = await axios(`${SERVER}/${url}`)
