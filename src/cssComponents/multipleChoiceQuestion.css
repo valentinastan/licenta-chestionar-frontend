@@ -7,19 +7,6 @@
  box-shadow: 0 0 10px #02454b; /*#2787A2;*/
 }
 
-.multipleChoiceQuestion .errorMessage {
-  color: white;
-  text-shadow: 2px 2px 5px red;
-  background-image: linear-gradient(to top, rgba(255,0,0,0), #e60000);
-  background-color: white;
-  font-family: fantasy;
-  text-align: center;
-}
-
-.multipleChoiceQuestion .errorMessage:default {
-  background-color: none;
-}
-
 .choicesType div {
   text-align: end;
   font-family: cursive;

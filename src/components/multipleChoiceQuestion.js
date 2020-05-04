@@ -10,6 +10,7 @@ const MultipleChoiceQuestion = (props) => {
   const dispatch = useDispatch()
   const answersKeys = Object.keys(variante)
 
+
   //console.log(props)
   return (
     <React.Fragment>
@@ -35,7 +36,6 @@ const MultipleChoiceQuestion = (props) => {
             </React.Fragment>
           ))}
         </div>
-        <h3 className = 'errorMessage'>{props.errorMessage}</h3>
       </li>
     </React.Fragment>
   )

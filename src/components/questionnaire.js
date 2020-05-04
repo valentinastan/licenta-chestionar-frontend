@@ -14,10 +14,15 @@ const Questionnaire = () => {
   const validQuestion = (question) => {
   const keys = Object.keys(question.variante || {})
 
+
   if(question.type === 'multipleChoices') {
     console.log(question.variante)
     if(keys.filter(key => question.variante[key].checked === true).length <= 0) {
-      dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Bifeaza cel putin o varianta de raspuns!'})
+      dispatch({
+        type: 'Error', 
+        idQuestion: question.id, 
+        errorMessage: `Bifeaza cel putin o varianta de raspuns pentru intrebarea cu numarul ${question.id} !`
+      })
       return false
     }
     return true
@@ -25,22 +30,22 @@ const Questionnaire = () => {
 
   if(question.type === 'threeChoices') {
     if(keys.filter(key => question.variante[key].checked === true).length !== 3) {
-      dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Bifeaza 3 variante de raspuns!'})
+      dispatch({type: 'Error', idQuestion: question.id, errorMessage: `Bifeaza 3 variante de raspuns pentru intrebarea cu numarul ${question.id}!`})
       return false
     }
     return true
   }
 
   if(question.type === 'inputAnswer') {
-    if(!question.variante['1'].val) {
-      dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Raspuns necesar!'})
+    if(!question.variante) {
+      dispatch({type: 'Error', idQuestion: question.id, errorMessage: `Raspuns necesar pentru intrebarea cu numarul ${question.id}!`})
       return false
     }
     return true
   }
 
   if(keys.filter(key => question.variante[key].checked === true).length !== 1) {
-    dispatch({type: 'Error', idQuestion: question.id, errorMessage: 'Bifeaza o varianta de raspuns!'})
+    dispatch({type: 'Error', idQuestion: question.id, errorMessage: `Bifeaza o varianta de raspuns pentru intrebarea cu numarul ${question.id}!`})
     return false
   }
   return true
@@ -63,6 +68,9 @@ const Questionnaire = () => {
   }
   // console.log('questions')
   // console.log(questions)
+
+  let errors = []
+
   return (
     <React.Fragment>
       <div className = 'questionnaire'>
@@ -74,6 +82,9 @@ const Questionnaire = () => {
                 <ul>
                   {
                     questionKeys.map( (key, index) => {
+                      if(questions[key].errorMessage)
+                        errors.push(questions[key].errorMessage)
+                    
                       if(questions[key].type === 'inputAnswer') {
                         return <TextInputQuestion key={`question_${key}`} {...questions[key]} nrQuestion={index}></TextInputQuestion>
                       }
@@ -83,6 +94,9 @@ const Questionnaire = () => {
                   <p>Nota: Colectarea informatiilor pe baza prezentului chestionar se face cu respectarea prevederilor art. 12 din Legea nr. 677 2001 pentru protectia persoanelor cu privire la prelucrarea datelor cu caracter personal si libera circulatie a acestor date, cu modificarile si completarile ulterioare.</p>
                 </ul>
                 <button type="button" onClick={ () => handleSubmit()}>Submit</button>
+                <ul className = 'errorMessage'>
+                  {errors.map((el, index) => { if(index < 3) return <li key={index}>{el}</li>})}
+                </ul>
               </React.Fragment>
             ): (
               <React.Fragment>

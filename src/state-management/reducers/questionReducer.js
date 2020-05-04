@@ -7,7 +7,7 @@ export default function questionReducer(state, action) {
       return state
     case 'Error':
       state.questions[action.idQuestion].errorMessage = action.errorMessage
-
+  
       return state
     case 'inputChange':
       state.questions[action.id].variante = {

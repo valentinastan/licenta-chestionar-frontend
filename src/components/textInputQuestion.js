@@ -15,7 +15,6 @@ const TextInputQuestion = (props) => {
               id: props.id,
               value: event.target.value,
             })}></textarea>
-          <h3 className='errorMessage'>{props.errorMessage}</h3>
         </li>
       </React.Fragment>
   )

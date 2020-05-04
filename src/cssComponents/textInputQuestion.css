@@ -7,12 +7,6 @@
   box-shadow: 0 0 10px #2787A2;
  }
 
- .textInputQuestion .errorMessage {
-   color: white;
-   text-shadow: 2px 2px 5px red;
-   text-align: center;
-}
-
 .textInputQuestion div {
    font-size: 18px;
    color: #008086;
