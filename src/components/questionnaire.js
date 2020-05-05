@@ -80,6 +80,14 @@ const Questionnaire = () => {
               <React.Fragment>
                 <h1>Studiu privind satisfactia consumatorilor de legume proaspete si preferintele acestora</h1>
                 <ul>
+                <p>Bună ziua,<br></br><br></br>
+
+                    Numele meu este Valentina Stan, studentă la Facultatea de Cibernetică, Statistică și Informatică Economică. <br></br>
+                    Prin intermediul acestui chestionar vă invit să participați la un studiu de cercetare util în realizarea lucrării de licență. <br></br><br></br>
+                    <b>CONDIȚIE DE PARTICIPARE LA STUDIU:</b> Chestionarul se adresează exclusiv persoanelor majore cu domiciliul în orașul București.  <br></br>
+                    Participarea la acest studiu presupune răspunsul la 21 de întrebări. Informaţiile primite sunt confidențiale şi vor fi folosite în scop academic. <br></br> <br></br>
+
+                    Vă mulțumesc!</p>
                   {
                     questionKeys.map( (key, index) => {
                       if(questions[key].errorMessage)

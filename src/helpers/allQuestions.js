@@ -15,10 +15,14 @@ const allQuestions = {
           checked: false,
         },
         3: {
-          val: 'De 2-3ori pe luna',
+          val: 'Saptamanal',
           checked: false,
         },
         4: {
+          val: 'De 2-3ori pe luna',
+          checked: false,
+        },
+        5: {
           val: 'Mai rar de o data pe luna',
           checked: false,
         },
@@ -33,10 +37,14 @@ const allQuestions = {
           checked: false,
         },
         2: {
-          val: 'Saptamanal',
+          val: 'De 2-3ori pe saptamana',
           checked: false,
         },
         3: {
+          val: 'Saptamanal',
+          checked: false,
+        },
+        4: {
           val: 'La cateva saptamani',
           checked: false,
         },
@@ -258,7 +266,7 @@ const allQuestions = {
     },
     8: {
       id: 8,
-      text: 'Preferati sa achizitionati legume proaspete in extrasezon?',
+      text: 'Preferaţi să achizitionaţi legume proaspete în extrasezon?',
       variante: {
         1: {
           val: 'Da',
@@ -272,12 +280,12 @@ const allQuestions = {
     },
     9: {
       id: 9,
-      text: 'Ce legume v-ati dori sa puteti achizitiona pe tot parcursul anului, chiar si in sezonul rece?',
+      text: 'Ce legume v-aţi dori să puteţi achiziţiona pe tot parcursul anului, chiar şi în sezonul rece?',
       type: 'inputAnswer',
     },
     10: {
       id: 10,
-      text: 'Cu cat ati fi dispus sa platiti mai mult pentru un kilogram de legume ecologice comparativ cu un kilogram de legume conventionale?',
+      text: 'Cu cât aţi fi dispus să plătiţi mai mult pentru un kilogram de legume ecologice comparativ cu un kilogram de legume convenţionale?',
       variante: {
         1: {
           val: '0%',
@@ -303,7 +311,7 @@ const allQuestions = {
     },
     11: {
       id: 11,
-      text: 'Cat de multumit sunteti cu privire la legumele proaspete pe care le achizitionati in momentul actual?',
+      text: 'Cât de mulţumit sunteţi cu privire la legumele proaspete pe care le achiziţionati în momentul actual?',
       variante: {
         1: {
           val: 'Foarte nemultumit',
@@ -329,7 +337,7 @@ const allQuestions = {
     },
     12: {
       id: 12,
-      text: 'Cat de dificil va este sa gasiti legume proaspete conform asteptarilor dumneavoastra?',
+      text: 'Cât de dificil vă este să vă procuraţi legume proaspete conform aşteptărilor dumneavoastră?',
       variante: {
         1: {
           val: 'Foarte dificil, nu gasesc',
@@ -355,7 +363,7 @@ const allQuestions = {
     },
     13: {
       id: 13,
-      text: 'Care este vârsta dumneavoastră?',
+      text: 'În cadrul cărui interval de vârstă vă situați?',
       variante: {
         1: {
           val: '18-25 ani',
@@ -385,7 +393,7 @@ const allQuestions = {
     },
     14: {
       id: 14,
-      text: 'Sexul dumneavoastră?',
+      text: 'Cărui sex aparțineți?',
       variante: {
         1: {
           val: 'Feminin',
@@ -477,26 +485,42 @@ const allQuestions = {
     },
     18: {
       id: 18,
-      text: 'Care este ultima şcoală absolvită?',
+      text: 'Care este ultima formă de educație absolvită?',
       variante: {
         1: {
-          val: 'Scoală generală',
+          val: 'Invatamant primar',
           checked: false,
         },
         2: {
-          val: 'Gimnaziu',
+          val: 'Invatamant gimnazial',
           checked: false,
         },
         3: {
-          val: 'Liceu',
+          val: 'Invatamant liceal',
           checked: false,
         },
         4: {
-          val: 'Facultate',
+          val: 'Invatamant postliceal',
           checked: false,
         },
         5: {
-          val: 'Postuniversitar',
+          val: 'Invatamant profesional',
+          checked: false,
+        },
+        6: {
+          val: 'Studii universitare de licenta',
+          checked: false,
+        },
+        7: {
+          val: 'Studii universitare de masterat',
+          checked: false,
+        },
+        8: {
+          val: 'Studii universitare de doctorat',
+          checked: false,
+        },
+        9: {
+          val: 'Studii postuniversitare',
           checked: false,
         },
       },
