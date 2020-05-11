@@ -2,8 +2,236 @@ const allQuestions = {
   questionnaire: {
     validated: false,
     questions: {
-    1: {
-      id: 1,
+      1: {
+        id: 1,
+        text: 'În cadrul cărui interval de vârstă vă situați?',
+        variante: {
+          1: {
+            val: '18-25 ani',
+            checked: false,
+          },
+          2: {
+            val: '26-35 ani',
+            checked: false,
+          },
+          3: {
+            val: '36-45 ani',
+            checked: false,
+          },
+          4: {
+            val: '46-55 ani',
+            checked: false,
+          },
+          5: {
+            val: '56-70 ani',
+            checked: false,
+          },
+          6: {
+            val: 'Peste 70 de ani',
+            checked: false,
+          },
+        },
+      },
+      2: {
+        id: 2,
+        text: 'Cărui sex aparțineți?',
+        variante: {
+          1: {
+            val: 'Feminin',
+            checked: false,
+          },
+          2: {
+            val: 'Masculin',
+            checked: false,
+          },
+        },
+      },
+      3: {
+        id: 3,
+        text: 'Care este numărul de persoane care locuiesc în gospodăria dumneavoastră?',
+        variante: {
+          1: {
+            val: '1 persoana',
+            checked: false,
+          },
+          2: {
+            val: '2 persoane',
+            checked: false,
+          },
+          3: {
+            val: '3 persoane',
+            checked: false,
+          },
+          4: {
+            val: '4 persoane',
+            checked: false,
+          },
+          5: {
+            val: '5 persoane',
+            checked: false,
+          },
+          6: {
+            val: 'Mai mult de 5 persoane',
+            checked: false,
+          },
+        },
+      },
+      4: {
+        id: 4,
+        text: 'Din care copii sub 18 ani?',
+        variante: {
+          1: {
+            val: 'Nici un copil',
+            checked: false,
+          },
+          2: {
+            val: '1 copil',
+            checked: false,
+          },
+          3: {
+            val: '2 copii',
+            checked: false,
+          },
+          4: {
+            val: 'Mai mult de 2 copii',
+            checked: false,
+          },
+        },
+      },
+      5: {
+        id: 5,
+        text: 'Care este starea civilă a dumneavoastra?',
+        variante: {
+          1: {
+            val: 'Casatorit(a)',
+            checked: false,
+          },
+          2: {
+            val: 'Necasatorit(a)',
+            checked: false,
+          },
+          3: {
+            val: 'Uniune consensuala',
+            checked: false,
+          },
+          4: {
+            val: 'Divortat(a)',
+            checked: false,
+          },
+          5: {
+            val: 'Vaduv(a)',
+            checked: false,
+          },
+        },
+      },
+      6: {
+        id: 6,
+        text: 'Care este ultima formă de educație absolvită?',
+        variante: {
+          1: {
+            val: 'Invatamant primar',
+            checked: false,
+          },
+          2: {
+            val: 'Invatamant gimnazial',
+            checked: false,
+          },
+          3: {
+            val: 'Invatamant liceal',
+            checked: false,
+          },
+          4: {
+            val: 'Invatamant postliceal',
+            checked: false,
+          },
+          5: {
+            val: 'Invatamant profesional',
+            checked: false,
+          },
+          6: {
+            val: 'Studii universitare de licenta',
+            checked: false,
+          },
+          7: {
+            val: 'Studii universitare de masterat',
+            checked: false,
+          },
+          8: {
+            val: 'Studii universitare de doctorat',
+            checked: false,
+          },
+          9: {
+            val: 'Studii postuniversitare',
+            checked: false,
+          },
+        },
+      },
+      7: {
+        id: 7,
+        text: 'Ocupaţia dumneavoastră actuală?',
+        variante: {
+          1: {
+            val: 'Angajat in sectorul public',
+            checked: false,
+          },
+          2: {
+            val: 'Angajat in sectorul privat',
+            checked: false,
+          },
+          3: {
+            val: 'Student',
+            checked: false,
+          },
+          4: {
+            val: 'Detin o afacere',
+            checked: false,
+          },
+          5: {
+            val: 'Pensionar',
+            checked: false,
+          },
+          6: {
+            val: 'Casnic(a)',
+            checked: false,
+          },
+          7: {
+            val: 'Somer',
+            checked: false,
+          },
+        },
+      },
+      8: {
+        id: 8,
+        text: 'Care este, cu aproximaţie, venitul lunar net al dumneavoastră?',
+        variante: {
+          1: {
+            val: 'Sub 1999 lei',
+            checked: false,
+          },
+          2: {
+            val: 'Intre 2000 si 3999 lei',
+            checked: false,
+          },
+          3: {
+            val: 'Intre 4000 si 5999 lei',
+            checked: false,
+          },
+          4: {
+            val: 'Intre 6000 si 7999 lei',
+            checked: false,
+          },
+          5: {
+            val: 'Intre 8000 si 9999 lei',
+            checked: false,
+          },
+          6: {
+            val: '10 000 lei si peste',
+            checked: false,
+          },
+        },
+      },
+    9: {
+      id: 9,
       text: "În general, cu ce frecvenţă consumaţi legume proaspete?",
       variante: {
         1: {
@@ -28,8 +256,8 @@ const allQuestions = {
         },
       },
     },
-    2: {
-      id: 2,
+    10: {
+      id: 10,
       text: 'Cat de des achizitionati legume proaspete?',
       variante: {
         1: {
@@ -50,8 +278,8 @@ const allQuestions = {
         },
       },
     },
-    3: {
-      id: 3,
+    11: {
+      id: 11,
       text: 'Ce procent din cantitatea totală de alimente consumate într-o lună este alocat consumului de legume proaspete?',
       variante: {
         1: {
@@ -72,8 +300,8 @@ const allQuestions = {
         },
       },
     },
-    4: {
-      id: 4,
+    12: {
+      id: 12,
       text: 'Ce produse din categoria legume proaspete aţi consumat în ultima lună?',
       variante: {
         1: {
@@ -191,8 +419,8 @@ const allQuestions = {
       },
       type: 'multipleChoices',
     },
-    5: {
-      id: 5,
+    13: {
+      id: 13,
       text: 'De unde obişnuiţi să vă procuraţi legumele proaspete?',
       variante: {
         1: {
@@ -222,8 +450,8 @@ const allQuestions = {
       },
       type: 'multipleChoices',
     },
-    6: {
-      id: 6,
+    14: {
+      id: 14,
       text: 'Vă rugăm să menţionaţi, în ordinea importanţei, principalele trei criterii de care ţineţi cont în alegerea legumelor proaspete?',
       variante: {
         1: {
@@ -249,8 +477,8 @@ const allQuestions = {
       },
       type: 'threeChoices',
     },
-    7: {
-      id: 7,
+    15: {
+      id: 15,
       text: 'Referindu-vă la categoriile de legume proaspete cultivate şi în România, care dintre următoarele'+
       ' afirmaţii referitoare la achiziţionarea lor vi se potriveşte cel mai bine?',
       variante: {
@@ -264,8 +492,8 @@ const allQuestions = {
         },
       },
     },
-    8: {
-      id: 8,
+    16: {
+      id: 16,
       text: 'Preferaţi să achizitionaţi legume proaspete în extrasezon?',
       variante: {
         1: {
@@ -278,13 +506,13 @@ const allQuestions = {
         },
       },
     },
-    9: {
-      id: 9,
+    17: {
+      id: 17,
       text: 'Ce legume v-aţi dori să puteţi achiziţiona pe tot parcursul anului, chiar şi în sezonul rece?',
       type: 'inputAnswer',
     },
-    10: {
-      id: 10,
+    18: {
+      id: 18,
       text: 'Cu cât aţi fi dispus să plătiţi mai mult pentru un kilogram de legume ecologice comparativ cu un kilogram de legume convenţionale?',
       variante: {
         1: {
@@ -309,8 +537,8 @@ const allQuestions = {
         },
       },
     },
-    11: {
-      id: 11,
+    19: {
+      id: 19,
       text: 'Cât de mulţumit sunteţi cu privire la legumele proaspete pe care le achiziţionati în momentul actual?',
       variante: {
         1: {
@@ -335,8 +563,8 @@ const allQuestions = {
         },
       },
     },
-    12: {
-      id: 12,
+    20: {
+      id: 20,
       text: 'Cât de dificil vă este să vă procuraţi legume proaspete conform aşteptărilor dumneavoastră?',
       variante: {
         1: {
@@ -357,234 +585,6 @@ const allQuestions = {
         },
         5: {
           val: 'Foarte usor, cumpar din prima ceea ce caut',
-          checked: false,
-        },
-      },
-    },
-    13: {
-      id: 13,
-      text: 'În cadrul cărui interval de vârstă vă situați?',
-      variante: {
-        1: {
-          val: '18-25 ani',
-          checked: false,
-        },
-        2: {
-          val: '26-35 ani',
-          checked: false,
-        },
-        3: {
-          val: '36-45 ani',
-          checked: false,
-        },
-        4: {
-          val: '46-55 ani',
-          checked: false,
-        },
-        5: {
-          val: '56-70 ani',
-          checked: false,
-        },
-        6: {
-          val: 'Peste 70 de ani',
-          checked: false,
-        },
-      },
-    },
-    14: {
-      id: 14,
-      text: 'Cărui sex aparțineți?',
-      variante: {
-        1: {
-          val: 'Feminin',
-          checked: false,
-        },
-        2: {
-          val: 'Masculin',
-          checked: false,
-        },
-      },
-    },
-    15: {
-      id: 15,
-      text: 'Care este numărul de persoane care locuiesc în gospodăria dumneavoastră?',
-      variante: {
-        1: {
-          val: '1 persoana',
-          checked: false,
-        },
-        2: {
-          val: '2 persoane',
-          checked: false,
-        },
-        3: {
-          val: '3 persoane',
-          checked: false,
-        },
-        4: {
-          val: '4 persoane',
-          checked: false,
-        },
-        5: {
-          val: '5 persoane',
-          checked: false,
-        },
-        6: {
-          val: 'Mai mult de 5 persoane',
-          checked: false,
-        },
-      },
-    },
-    16: {
-      id: 16,
-      text: 'Din care copii sub 18 ani?',
-      variante: {
-        1: {
-          val: 'Nici un copil',
-          checked: false,
-        },
-        2: {
-          val: '1 copil',
-          checked: false,
-        },
-        3: {
-          val: '2 copii',
-          checked: false,
-        },
-        4: {
-          val: 'Mai mult de 2 copii',
-          checked: false,
-        },
-      },
-    },
-    17: {
-      id: 17,
-      text: 'Care este starea civilă a dumneavoastra?',
-      variante: {
-        1: {
-          val: 'Casatorit(a)',
-          checked: false,
-        },
-        2: {
-          val: 'Necasatorit(a)',
-          checked: false,
-        },
-        3: {
-          val: 'Uniune consensuala',
-          checked: false,
-        },
-        4: {
-          val: 'Divortat(a)',
-          checked: false,
-        },
-        5: {
-          val: 'Vaduv(a)',
-          checked: false,
-        },
-      },
-    },
-    18: {
-      id: 18,
-      text: 'Care este ultima formă de educație absolvită?',
-      variante: {
-        1: {
-          val: 'Invatamant primar',
-          checked: false,
-        },
-        2: {
-          val: 'Invatamant gimnazial',
-          checked: false,
-        },
-        3: {
-          val: 'Invatamant liceal',
-          checked: false,
-        },
-        4: {
-          val: 'Invatamant postliceal',
-          checked: false,
-        },
-        5: {
-          val: 'Invatamant profesional',
-          checked: false,
-        },
-        6: {
-          val: 'Studii universitare de licenta',
-          checked: false,
-        },
-        7: {
-          val: 'Studii universitare de masterat',
-          checked: false,
-        },
-        8: {
-          val: 'Studii universitare de doctorat',
-          checked: false,
-        },
-        9: {
-          val: 'Studii postuniversitare',
-          checked: false,
-        },
-      },
-    },
-    19: {
-      id: 19,
-      text: 'Ocupaţia dumneavoastră actuală?',
-      variante: {
-        1: {
-          val: 'Angajat in sectorul public',
-          checked: false,
-        },
-        2: {
-          val: 'Angajat in sectorul privat',
-          checked: false,
-        },
-        3: {
-          val: 'Student',
-          checked: false,
-        },
-        4: {
-          val: 'Detin o afacere',
-          checked: false,
-        },
-        5: {
-          val: 'Pensionar',
-          checked: false,
-        },
-        6: {
-          val: 'Casnic(a)',
-          checked: false,
-        },
-        7: {
-          val: 'Somer',
-          checked: false,
-        },
-      },
-    },
-    20: {
-      id: 20,
-      text: 'Care este, cu aproximaţie, venitul lunar net al dumneavoastră?',
-      variante: {
-        1: {
-          val: 'Sub 1999 lei',
-          checked: false,
-        },
-        2: {
-          val: 'Intre 2000 si 3999 lei',
-          checked: false,
-        },
-        3: {
-          val: 'Intre 4000 si 5999 lei',
-          checked: false,
-        },
-        4: {
-          val: 'Intre 6000 si 7999 lei',
-          checked: false,
-        },
-        5: {
-          val: 'Intre 8000 si 9999 lei',
-          checked: false,
-        },
-        6: {
-          val: '10 000 lei si peste',
           checked: false,
         },
       },

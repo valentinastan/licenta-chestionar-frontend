@@ -46,7 +46,8 @@ button:hover {
   text-align: center;
   color: black;
   text-align: center;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-family: sans-serif;
   margin: 0.5%;
   width: 58%;
   height: 40px;
