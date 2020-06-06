@@ -232,7 +232,7 @@ const allQuestions = {
       },
     9: {
       id: 9,
-      text: "În general, cu ce frecvenţă consumaţi legume proaspete?",
+      text: "În general, cu ce frecvenţă consumaţi legume?",
       variante: {
         1: {
           val: 'Zilnic',
@@ -302,7 +302,7 @@ const allQuestions = {
     },
     12: {
       id: 12,
-      text: 'Ce produse din categoria legume proaspete aţi consumat în ultima lună?',
+      text: 'Ce produse din categoria legume aţi consumat în ultima lună?',
       variante: {
         1: {
           val: 'Cartofi',
@@ -455,7 +455,7 @@ const allQuestions = {
       text: 'Vă rugăm să menţionaţi, în ordinea importanţei, principalele trei criterii de care ţineţi cont în alegerea legumelor proaspete?',
       variante: {
         1: {
-          val: 'Prospeţimea',
+          val: 'Prospetimea',
           checked: false,
         },
         2: {
