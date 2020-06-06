@@ -602,7 +602,7 @@ const allQuestions = {
           checked: false,
         },
         2: {
-          val: 'Ne ajung doar pentru strictul necesa',
+          val: 'Ne ajung doar pentru strictul necesar',
           checked: false,
         },
         3: {
