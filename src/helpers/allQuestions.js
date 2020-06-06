@@ -276,6 +276,10 @@ const allQuestions = {
           val: 'La cateva saptamani',
           checked: false,
         },
+        5: {
+          val: 'Nu achizitionez/Nu achizitionez eu',
+          checked: false,
+        },
       },
     },
     11: {
