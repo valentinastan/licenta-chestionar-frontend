@@ -59,6 +59,7 @@ const Questionnaire = () => {
 
   const handleSubmit = () => {
     if(validQuestionnaire()){
+      dispatch({type: 'handleDiacritics'})
       postQuestionnaireQuery(questions)
       dispatch({
         type:'validated',
