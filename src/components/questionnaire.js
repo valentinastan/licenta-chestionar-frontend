@@ -100,7 +100,7 @@ const Questionnaire = () => {
                       return <MultipleChoiceQuestion key={`question_${key}`} {...questions[key]} nrQuestion={index}></MultipleChoiceQuestion>
                     })
                   }
-                  <p>Nota: Colectarea informatiilor pe baza prezentului chestionar se face cu respectarea prevederilor art. 12 din Legea nr. 677 2001 pentru protectia persoanelor cu privire la prelucrarea datelor cu caracter personal si libera circulatie a acestor date, cu modificarile si completarile ulterioare.</p>
+                  <p>Nota: Colectarea informatiilor pe baza prezentului chestionar se face cu respectarea prevederilor art. 12 din Legea nr. 696 2001 pentru protectia persoanelor cu privire la prelucrarea datelor cu caracter personal si libera circulatie a acestor date, cu modificarile si completarile ulterioare.</p>
                 </ul>
                 <button type="button" onClick={ () => handleSubmit()}>Submit</button>
                 <ul className = 'errorMessage'>
