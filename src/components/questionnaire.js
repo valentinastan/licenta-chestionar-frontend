@@ -85,7 +85,7 @@ const Questionnaire = () => {
 
                     Numele meu este Valentina Stan, studentă la Facultatea de Cibernetică, Statistică și Informatică Economică. <br></br>
                     Prin intermediul acestui chestionar vă invit să participați la un studiu de cercetare util în realizarea lucrării de licență. <br></br><br></br>
-                    <b>CONDIȚIE DE PARTICIPARE LA STUDIU:</b> Chestionarul se adresează exclusiv persoanelor majore cu domiciliul în orașul București.  <br></br>
+                    <b>CONDIȚIE DE PARTICIPARE LA STUDIU:</b> Chestionarul se adresează exclusiv persoanelor majore cu domiciliul în orașul București şi în zonele limitrofe.  <br></br>
                     Participarea la acest studiu presupune răspunsul la 21 de întrebări. Informaţiile primite sunt confidențiale şi vor fi folosite în scop academic. <br></br> <br></br>
 
                     Vă mulțumesc!</p>
